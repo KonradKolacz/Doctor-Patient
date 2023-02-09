@@ -1,0 +1,44 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+    http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.8.xsd ">
+
+
+    <changeSet id="2023-01-11" author="Konrad">
+        <createTable tableName="doctor">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="varchar(45)"/>
+            <column name="surname" type="varchar(45)"/>
+            <column name="nip" type="varchar(45)"/>
+            <column name="specialty" type="varchar(45)"/>
+        </createTable>
+
+        <createTable tableName="patient">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="varchar(45)"/>
+            <column name="surname" type="varchar(45)"/>
+            <column name="pesel" type="varchar(45)"/>
+        </createTable>
+        <createTable tableName="visit">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="date_time" type="datetime"/>
+            <column name="time_in_minutes" type="int"/>
+            <column name="doctor_id" type="bigint"/>
+            <column name="patient_id" type="bigint"/>
+
+        </createTable>
+
+    </changeSet>
+
+
+</databaseChangeLog>

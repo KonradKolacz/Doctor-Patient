@@ -1,0 +1,32 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+    http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.8.xsd ">
+
+
+    <changeSet id="2023-01-12" author="Konrad">
+        <insert tableName="doctor">
+            <column name="name" value="michal"/>
+            <column name="surname" value="nowak"/>
+            <column name="nip" value="124372482"/>
+            <column name="specialty" value="internist"/>
+        </insert>
+        <insert tableName="patient">
+            <column name="name" value="Kasia"/>
+            <column name="surname" value="Sawicka"/>
+            <column name="pesel" value="1234567"/>
+        </insert>
+        <insert tableName="visit">
+            <column name="date_time" value="2023-01-11 9:00"/>
+            <column name="time_in_minutes" value="30"/>
+            <column name="doctor_id" value="1"/>
+            <column name="patient_id" value="1"/>
+        </insert>
+    </changeSet>
+
+
+</databaseChangeLog>
