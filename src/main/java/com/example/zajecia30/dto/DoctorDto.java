@@ -21,4 +21,5 @@ public class DoctorDto extends RepresentationModel<DoctorDto> {
     private String specialty;
     private Set<Visit> visits;
 //    comment for task34
+//    new exercise
 }
