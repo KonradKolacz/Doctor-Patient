@@ -22,4 +22,5 @@ public class DoctorDto extends RepresentationModel<DoctorDto> {
 //     exercise
     private Set<Visit> visits;
 //    comment for task34
+//    new with commit
 }
