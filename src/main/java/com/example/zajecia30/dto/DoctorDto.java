@@ -15,12 +15,7 @@ import java.util.Set;
 public class DoctorDto extends RepresentationModel<DoctorDto> {
     private Long id;
     private String name;
-//    task50
     private String surname;
-//     dev dev
     private String specialty;
-//     exercise
     private Set<Visit> visits;
-//    comment for task34
-//    new with commit
 }
