@@ -17,7 +17,7 @@ public class DoctorDto extends RepresentationModel<DoctorDto> {
     private String name;
 //    task50
     private String surname;
-//    task50
+//     dev dev
     private String specialty;
     private Set<Visit> visits;
 //    comment for task34
