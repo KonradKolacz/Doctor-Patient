@@ -13,6 +13,7 @@ public class Zajecia30Application {
 		SpringApplication.run(Zajecia30Application.class, args);
 
 	}
+// 	main
 
 //	@Scheduled(fixedDelay = 2000)
 //	public void hello(){
